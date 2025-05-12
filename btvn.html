@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Nhập Thông Tin</title>
+</head>
+<body>
+  <h2>Form Nhập Thông Tin Cá Nhân</h2>
+  <form action="/submit" method="post">
+    <table border="1" cellpadding="10">
+      <tr>
+        <td><label for="name">Họ và tên:</label></td>
+        <td><input type="text" id="name" name="name" required></td>
+      </tr>
+      <tr>
+        <td><label for="age">Tuổi:</label></td>
+        <td><input type="number" id="age" name="age" min="1" required></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" name="email" required></td>
+      </tr>
+      <tr>
+        <td><label for="phone">Số điện thoại:</label></td>
+        <td><input type="tel" id="phone" name="phone" pattern="[0-9]{10,11}" required></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center;">
+          <button type="submit">Gửi</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
